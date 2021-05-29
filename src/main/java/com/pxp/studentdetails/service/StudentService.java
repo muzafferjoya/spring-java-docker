@@ -20,6 +20,7 @@ public class StudentService {
         List<Student> students = Arrays.asList(
                 new Student(1,"Teresa","Buttler"),
                 new Student(2, "Carlos", "Bryant"));
+        System.out.println("Github actions.");
         return students
                 .stream()
                 .filter(s -> s.getRollNo() == rollno)
