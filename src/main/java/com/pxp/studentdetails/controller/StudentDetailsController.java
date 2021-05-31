@@ -14,6 +14,11 @@ public class StudentDetailsController {
     @Autowired
     private StudentService studentService;
 
+    @RequestMapping(value = "", method = RequestMethod.GET)
+    public String greeting(){
+        return "Welcome to student details application. To fetch student details hit the endpoint student/{rollno}";
+    }
+
     @RequestMapping(value = "student/{rollno}", method = RequestMethod.GET)
     public StudentDetails getAllStudents(@PathVariable int rollno){
         return studentService.listOfStudents(rollno);
