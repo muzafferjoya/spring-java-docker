@@ -1,4 +1,9 @@
 pipeline {
+	environment{
+	registry = "muzaffarjoya/spring-java"
+	registryCredential = 'docker-hub'
+	dockerImage = ''
+}
   agent { dockerfile true}
   stages {
     stage('Checkout SCM') {
@@ -7,11 +12,14 @@ pipeline {
             }
             
         }
-	stage('Build Docker Container') {
-	  steps {
-		sh 'docker build -t myapp .'
+stage('Building image') {
+      steps{
+        script {
+          dockerImage = docker.build registry + ":$BUILD_NUMBER"
+        }
+      }
+    }
 	}
-}
 
     stage('Running Build') {
       steps {
@@ -19,4 +27,4 @@ pipeline {
       }
     }
   }
-}
+
