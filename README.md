@@ -1,6 +1,6 @@
 ### Spring Java App Project on Docker
 
-**Build Docker Image**
+## 1. Build Docker Image
 
 `docker build -t myapp .`
 
