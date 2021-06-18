@@ -7,6 +7,12 @@ pipeline {
             }
             
         }
+	stage('Build Docker Container') {
+	  steps {
+		sh 'docker build -t myapp .'
+	}
+}
+
     stage('Running Build') {
       steps {
         echo 'Successfully build the docker image and running this command inside it!'
