@@ -1,4 +1,4 @@
-package com.pxp.studentdetails.model;
+package com.khan.studentdetails.model;
 
 public class Student {
     private int rollNo;

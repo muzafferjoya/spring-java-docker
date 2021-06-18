@@ -1,4 +1,4 @@
-package com.pxp.studentdetails.model;
+package com.khan.studentdetails.model;
 
 import java.util.List;
 

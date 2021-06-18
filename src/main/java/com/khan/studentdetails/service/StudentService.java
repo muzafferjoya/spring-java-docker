@@ -1,6 +1,6 @@
-package com.pxp.studentdetails.service;
+package com.khan.studentdetails.service;
 
-import com.pxp.studentdetails.model.*;
+import com.khan.studentdetails.model.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

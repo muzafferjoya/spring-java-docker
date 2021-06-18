@@ -1,7 +1,7 @@
-package com.pxp.studentdetails.controller;
+package com.khan.studentdetails.controller;
 
-import com.pxp.studentdetails.model.StudentDetails;
-import com.pxp.studentdetails.service.StudentService;
+import com.khan.studentdetails.model.StudentDetails;
+import com.khan.studentdetails.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

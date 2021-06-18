@@ -1,4 +1,4 @@
-package com.pxp.studentdetails.config;
+package com.khan.studentdetails.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

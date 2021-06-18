@@ -1,4 +1,5 @@
 FROM maven:3.6.3-jdk-8-slim AS build
+LABEL Muzaffar Khan "muzafferjoya@gmail.com"
 RUN mkdir -p /workspace
 WORKDIR /workspace
 COPY pom.xml /workspace
