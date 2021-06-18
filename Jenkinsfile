@@ -19,7 +19,7 @@ stage('Building image') {
         }
       }
     }
-	}
+	
 
     stage('Running Build') {
       steps {
@@ -27,4 +27,4 @@ stage('Building image') {
       }
     }
   }
-
+}
