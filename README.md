@@ -2,7 +2,7 @@
 
 ### 1. Build Docker Image
 
-`docker build -t myapp .`
+`docker build -t develop .`
 
 ### 2. Spin up Docker Container
 
