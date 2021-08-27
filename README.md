@@ -2,7 +2,7 @@
 
 ### 1. Build Docker Image
 
-`docker build -t develop .`
+`docker build -t v1 .`
 
 ### 2. Spin up Docker Container
 
